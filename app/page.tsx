@@ -403,7 +403,6 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               "An app instead of a coach",
-              "A template plan with your name pasted on top",
               "Diet plans under 1,200 kcal or any extreme restriction",
               "Motivational BS without substance",
               "Coaching from someone who's never been in the fight",
