@@ -29,7 +29,7 @@ export default function Home() {
           alt="Blazej Nowak in the ring"
           fill
           priority
-          className="object-cover object-center"
+          className="object-contain"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#0A0A0A]" />
@@ -425,7 +425,7 @@ export default function Home() {
           alt="Blazej Nowak physique"
           fill
           className="object-cover"
-          style={{ objectPosition: "center 65%" }}
+          style={{ objectPosition: "center 25%" }}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-black/80" />
