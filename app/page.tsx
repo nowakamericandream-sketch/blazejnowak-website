@@ -23,7 +23,7 @@ export default function Home() {
       </nav>
 
       {/* ── HERO ── */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center">
+      <section className="relative h-screen min-h-[600px] flex items-start justify-center pt-28">
         <Image
           src="/images/hero.jpg"
           alt="Blazej Nowak in the ring"
@@ -39,7 +39,7 @@ export default function Home() {
           </p>
           <h1 className="font-[family-name:var(--font-barlow)] font-900 text-6xl md:text-8xl lg:text-9xl uppercase leading-none text-white mb-6">
             13 Years<br />
-            <span className="text-[#F5C400]">In The Ring.</span>
+            <span className="text-[#F5C400]">In Boxing.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 font-[family-name:var(--font-inter)] font-300 mb-10 max-w-2xl mx-auto leading-relaxed">
             Now I help men 30+ lose the gut and rebuild the discipline they lost along the way. 12 weeks, 1:1 — built for your life, not a template.
