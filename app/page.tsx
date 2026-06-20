@@ -424,7 +424,8 @@ export default function Home() {
           src="/images/physique.jpg"
           alt="Blazej Nowak physique"
           fill
-          className="object-cover object-center"
+          className="object-cover"
+          style={{ objectPosition: "center 65%" }}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-black/80" />
