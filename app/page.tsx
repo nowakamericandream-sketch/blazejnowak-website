@@ -425,7 +425,7 @@ export default function Home() {
           alt="Blazej Nowak physique"
           fill
           className="object-cover"
-          style={{ objectPosition: "center 25%" }}
+          style={{ objectPosition: "center 10%" }}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-black/80" />
