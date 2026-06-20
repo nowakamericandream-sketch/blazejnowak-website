@@ -224,14 +224,6 @@ export default function Home() {
               <p className="text-white/50 font-[family-name:var(--font-inter)] mb-8">
                 Strength + Conditioning + Nutrition. Built around your body, your life, your goal.
               </p>
-              <div className="mb-8">
-                <div className="text-[#F5C400] font-[family-name:var(--font-barlow)] font-900 text-4xl">
-                  $500<span className="text-2xl text-white/40">/month</span>
-                </div>
-                <div className="text-white/40 font-[family-name:var(--font-inter)] text-sm mt-1">
-                  or $1,200 for 3 months — saves you $300
-                </div>
-              </div>
               <a
                 href={TALLY_URL}
                 target="_blank"
@@ -256,14 +248,6 @@ export default function Home() {
               <p className="text-white/50 font-[family-name:var(--font-inter)] mb-8">
                 Same 1:1 Premium scope — but training includes boxing skills + physical conditioning. Transformation through the sport.
               </p>
-              <div className="mb-8">
-                <div className="text-white font-[family-name:var(--font-barlow)] font-900 text-4xl">
-                  $500<span className="text-2xl text-white/40">/month</span>
-                </div>
-                <div className="text-white/40 font-[family-name:var(--font-inter)] text-sm mt-1">
-                  or $1,200 for 3 months — saves you $300
-                </div>
-              </div>
               <a
                 href={TALLY_URL}
                 target="_blank"
