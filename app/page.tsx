@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ResultCard from "./components/ResultCard";
 
 const TALLY_URL = "https://tally.so/r/rjvMGp";
 
@@ -41,7 +42,7 @@ export default function Home() {
             <span className="text-[#F5C400]">In The Ring.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 font-[family-name:var(--font-inter)] font-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Now I build fighters outside of it. If you&apos;re a man over 30 who&apos;s done making excuses — this is your next move.
+            Now I help men 30+ lose the gut and rebuild the discipline they lost along the way. 12 weeks, 1:1 — built for your life, not a template.
           </p>
           <a
             href={TALLY_URL}
@@ -63,7 +64,7 @@ export default function Home() {
       <section className="border-y border-[#F5C400]/20 bg-[#0A0A0A]">
         <div className="max-w-5xl mx-auto grid grid-cols-3 divide-x divide-[#F5C400]/20">
           {[
-            { num: "13", label: "Years Pro Boxing" },
+            { num: "13", label: "Years In Boxing" },
             { num: "12", label: "Weeks — One Life Change" },
             { num: "30+", label: "The Age It Starts Counting" },
           ].map((stat) => (
@@ -121,7 +122,7 @@ export default function Home() {
               Boxing taught me everything: that force breaks but discipline holds. That you win in your head first. That more doesn&apos;t mean better.
             </p>
             <p className="text-white font-[family-name:var(--font-barlow)] font-700 text-xl uppercase tracking-wide">
-              Now I teach that to men who are ready to become the fighter they were always meant to be.
+              Now I teach that to men 30+ who are ready to take back control of their body, their discipline, and their life.
             </p>
           </div>
         </div>
@@ -271,6 +272,49 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── REAL RESULTS ── */}
+      <section className="py-24 px-6 max-w-5xl mx-auto">
+        <p className="text-[#F5C400] font-[family-name:var(--font-barlow)] font-700 text-sm tracking-[0.3em] uppercase mb-4">
+          Proof
+        </p>
+        <h2 className="font-[family-name:var(--font-barlow)] font-900 text-5xl md:text-6xl uppercase mb-12 leading-tight">
+          Real Results.<br />
+          <span className="text-[#F5C400]">Real Men.</span>
+        </h2>
+
+        <div className="space-y-8">
+          {[
+            {
+              name: "Robert",
+              stat: "−14.1 lbs",
+              statLabel: "in 6 weeks",
+              beforeAfterSrc: "/images/robert-before-after.png",
+              chartSrc: "/images/robert-chart.png",
+              quotes: [
+                "Now I see the difference thank you so much. Bro I also feel better. Better sleep. Better energy. Everything.",
+                "Your the best coach and bro was even in DR imagine in person broski",
+              ],
+            },
+          ].map((result) => (
+            <ResultCard key={result.name} {...result} />
+          ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <a
+            href={TALLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-lg uppercase tracking-widest px-12 py-4 hover:bg-[#D4A800] transition-colors"
+          >
+            Apply for Coaching
+          </a>
+          <p className="text-white/30 font-[family-name:var(--font-inter)] text-sm mt-4">
+            Application is free. I&apos;ll review it personally and reply within 48 hours.
+          </p>
         </div>
       </section>
 
