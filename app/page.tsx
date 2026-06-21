@@ -48,7 +48,7 @@ export default function Home() {
             href={TALLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-lg uppercase tracking-widest px-10 py-4 hover:bg-[#D4A800] transition-colors"
+            className="block w-full sm:inline-block sm:w-auto bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-lg uppercase tracking-widest px-10 py-5 hover:bg-[#D4A800] transition-colors"
           >
             Apply for Coaching
           </a>
@@ -91,7 +91,7 @@ export default function Home() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6 text-white/75 font-[family-name:var(--font-inter)] text-lg leading-relaxed">
+          <div className="space-y-8 text-white/75 font-[family-name:var(--font-inter)] text-lg leading-relaxed">
             <p>
               At 19, I was admitted to firefighter academy — 2nd out of 1,000 candidates. Three days before starting, I left for England to box instead. That&apos;s who I am: I chase greatness, not comfort.
             </p>
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="space-y-6 text-white/75 font-[family-name:var(--font-inter)] text-lg leading-relaxed">
+          <div className="space-y-8 text-white/75 font-[family-name:var(--font-inter)] text-lg leading-relaxed">
             <p>
               I hold a Master&apos;s degree in Sport from AWF Poznań. I&apos;ve lived across three continents — Poland, England, USA (California, Chicago, Florida, New York), now Punta Cana, Dominican Republic.
             </p>
@@ -308,7 +308,7 @@ export default function Home() {
             href={TALLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-lg uppercase tracking-widest px-12 py-4 hover:bg-[#D4A800] transition-colors"
+            className="block w-full sm:inline-block sm:w-auto bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-lg uppercase tracking-widest px-12 py-5 hover:bg-[#D4A800] transition-colors"
           >
             Apply for Coaching
           </a>
@@ -448,7 +448,7 @@ export default function Home() {
             { n: "4.", text: "Never seek comfort after a loss. Comfort makes you weaker. Be a man and get back to work." },
             { n: "5.", text: "More doesn't mean better. Quality over volume. Always." },
           ].map((item) => (
-            <div key={item.n} className="flex gap-6 items-start border-b border-white/5 pb-6">
+            <div key={item.n} className="flex gap-6 items-start border-b border-white/5 pb-8">
               <span className="font-[family-name:var(--font-barlow)] font-900 text-3xl text-[#F5C400] shrink-0 w-8">
                 {item.n}
               </span>
@@ -488,7 +488,7 @@ export default function Home() {
             href={TALLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-xl uppercase tracking-widest px-14 py-5 hover:bg-[#D4A800] transition-colors"
+            className="block w-full sm:inline-block sm:w-auto bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-xl uppercase tracking-widest px-14 py-6 hover:bg-[#D4A800] transition-colors"
           >
             Apply for P4P Coaching
           </a>
