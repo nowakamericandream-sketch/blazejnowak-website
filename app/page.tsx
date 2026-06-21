@@ -42,7 +42,7 @@ export default function Home() {
             <span className="text-[#F5C400]">In Boxing.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 font-[family-name:var(--font-inter)] font-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Now I help men 30+ lose the gut and rebuild the discipline they lost along the way. 12 weeks, 1:1 — built for your life, not a template.
+            Now I help men 30+ lose the gut and rebuild the discipline they lost along the way. 12 weeks, 1:1. Built for your life, not a template.
           </p>
           <a
             href={TALLY_URL}
