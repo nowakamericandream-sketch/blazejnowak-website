@@ -66,7 +66,7 @@ export default function Home() {
             href={TALLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full sm:inline-block sm:w-auto text-center bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-xl uppercase tracking-widest px-12 py-6 hover:bg-[#D4A800] transition-colors"
+            className="inline-block text-center bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-base md:text-lg uppercase tracking-widest px-9 py-4 hover:bg-[#D4A800] transition-colors"
           >
             Apply for Coaching
           </a>
@@ -250,17 +250,9 @@ export default function Home() {
               <h3 className="font-[family-name:var(--font-barlow)] font-900 text-3xl uppercase text-white mb-2">
                 P4P Premium
               </h3>
-              <p className="text-white/45 font-[family-name:var(--font-inter)] mb-8">
+              <p className="text-white/45 font-[family-name:var(--font-inter)]">
                 Strength + Conditioning + Nutrition. Built around your body, your life, your goal.
               </p>
-              <a
-                href={TALLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-base uppercase tracking-widest px-6 py-3 hover:bg-[#D4A800] transition-colors"
-              >
-                Apply Now
-              </a>
             </Reveal>
 
             {/* CHAMPION */}
@@ -274,17 +266,9 @@ export default function Home() {
                   Boxing
                 </span>
               </div>
-              <p className="text-white/45 font-[family-name:var(--font-inter)] mb-8">
+              <p className="text-white/45 font-[family-name:var(--font-inter)]">
                 Same 1:1 Premium scope — but training includes boxing skills + physical conditioning. Transformation through the sport.
               </p>
-              <a
-                href={TALLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center border border-white/20 text-white font-[family-name:var(--font-barlow)] font-800 text-base uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors"
-              >
-                Apply Now
-              </a>
             </Reveal>
           </div>
 
@@ -364,19 +348,6 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-12 text-center">
-          <a
-            href={TALLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full sm:inline-block sm:w-auto bg-[#F5C400] text-black font-[family-name:var(--font-barlow)] font-800 text-lg uppercase tracking-widest px-12 py-5 hover:bg-[#D4A800] transition-colors"
-          >
-            Apply for Coaching
-          </a>
-          <p className="text-white/25 font-[family-name:var(--font-inter)] text-sm mt-4">
-            Application is free. I&apos;ll review it personally and reply within 48 hours.
-          </p>
-        </Reveal>
         </div>
       </section>
 
@@ -608,14 +579,6 @@ export default function Home() {
                 className="text-white/45 font-[family-name:var(--font-inter)] text-sm hover:text-white transition-colors"
               >
                 Instagram
-              </a>
-              <a
-                href={TALLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#F5C400]/70 font-[family-name:var(--font-inter)] text-sm hover:text-[#F5C400] transition-colors"
-              >
-                Apply for Coaching →
               </a>
             </div>
           </div>

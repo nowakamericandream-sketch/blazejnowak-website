@@ -3,6 +3,8 @@
 import { useEffect, useRef, type ElementType, type ReactNode } from "react";
 
 // One shared observer for every Reveal on the page — cheaper than one per element.
+// Toggles the class on every entry/exit so the animation replays each time the
+// element scrolls back into view, instead of firing only once.
 let observer: IntersectionObserver | null = null;
 
 function getObserver() {
@@ -10,10 +12,7 @@ function getObserver() {
     observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-revealed");
-            observer!.unobserve(entry.target);
-          }
+          entry.target.classList.toggle("is-revealed", entry.isIntersecting);
         }
       },
       { rootMargin: "0px 0px -12% 0px", threshold: 0.01 }
