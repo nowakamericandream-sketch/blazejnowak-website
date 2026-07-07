@@ -9,26 +9,65 @@
   --font-inter: var(--font-inter);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Custom base styles live in the base layer so Tailwind utility
+   classes can still override them. An unlayered rule here would
+   silently beat every utility (margin, padding, leading, …). */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #0A0A0A;
+    color: #ffffff;
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+/* ── Scroll reveal ─────────────────────────────────────────────
+   Hidden state applies ONLY when JS is running (html.js — class
+   set by an inline script in layout.tsx before first paint) AND
+   the user allows motion. No JS / reduced motion → fully static,
+   fully visible page. The inline script also prevents FOUC:
+   elements start hidden from first paint, never flash in their
+   final position. */
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-reveal] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
+  }
+
+  html.js [data-reveal].is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  html.js .hero-zoom {
+    animation: hero-zoom 10s ease-out forwards;
+  }
 }
 
-body {
-  background: #0A0A0A;
-  color: #ffffff;
-  font-family: var(--font-inter), sans-serif;
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--font-barlow), sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  line-height: 1;
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
 }

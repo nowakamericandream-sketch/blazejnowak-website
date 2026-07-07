@@ -33,8 +33,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${barlowCondensed.variable} ${inter.variable}`}>
-      <body className="bg-[#0A0A0A] text-white antialiased">{children}</body>
+    <html
+      lang="en"
+      className={`${barlowCondensed.variable} ${inter.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="bg-[#0A0A0A] text-white antialiased">
+        {/* Marks JS as available before first paint — scroll-reveal CSS
+            only hides elements under html.js, so a no-JS visit gets a
+            fully visible static page. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -33,21 +33,36 @@ export default function ResultCard({
           <div className="font-[family-name:var(--font-barlow)] font-900 text-6xl md:text-7xl text-[#F5C400] leading-none">
             {stat}
           </div>
-          <div className="text-white/50 font-[family-name:var(--font-inter)] text-sm uppercase tracking-widest mt-1">
+          <div className="text-white/45 font-[family-name:var(--font-inter)] text-sm uppercase tracking-widest mt-1">
             {statLabel}
           </div>
         </div>
       </div>
 
+      {/* Quote — before images for immediate impact */}
+      <div className="border-l-2 border-[#F5C400] pl-6 space-y-4 mb-10">
+        {quotes.map((quote, i) => (
+          <p
+            key={i}
+            className="text-white/70 font-[family-name:var(--font-inter)] text-lg italic leading-relaxed"
+          >
+            &ldquo;{quote}&rdquo;
+          </p>
+        ))}
+        <p className="text-white/45 font-[family-name:var(--font-inter)] text-sm uppercase tracking-wider">
+          — {name}
+        </p>
+      </div>
+
       {/* Images */}
-      <div className="grid md:grid-cols-2 gap-6 mb-10">
+      <div className="grid md:grid-cols-2 gap-6">
         {/* Before/after — full image, no crop */}
         <div className="relative w-full">
           <Image
             src={beforeAfterSrc}
             alt={`${name} before and after`}
-            width={800}
-            height={1000}
+            width={1290}
+            height={1136}
             className="w-full h-auto"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
@@ -64,21 +79,6 @@ export default function ResultCard({
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
-      </div>
-
-      {/* Quote */}
-      <div className="border-l-2 border-[#F5C400] pl-6 space-y-4">
-        {quotes.map((quote, i) => (
-          <p
-            key={i}
-            className="text-white/80 font-[family-name:var(--font-inter)] text-lg italic leading-relaxed"
-          >
-            &ldquo;{quote}&rdquo;
-          </p>
-        ))}
-        <p className="text-white/40 font-[family-name:var(--font-inter)] text-sm uppercase tracking-wider">
-          — {name}
-        </p>
       </div>
     </div>
   );
