@@ -43,7 +43,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[600px] flex items-start justify-center pt-28">
         <Image
-          src="/images/hero.jpg"
+          src="/images/ring2.jpg"
           alt="Blazej Nowak in the ring"
           fill
           priority
@@ -153,7 +153,7 @@ export default function Home() {
       {/* ── RING PHOTO BREAK ── */}
       <section className="relative h-64 md:h-96 overflow-hidden">
         <Image
-          src="/images/ring2.jpg"
+          src="/images/hero.jpg"
           alt="Blazej Nowak boxing"
           fill
           className="object-cover object-center"
