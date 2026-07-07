@@ -47,7 +47,7 @@ export default function Home() {
           alt="Blazej Nowak in the ring"
           fill
           priority
-          className="object-cover hero-zoom"
+          className="object-contain md:object-cover hero-zoom"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-[#0A0A0A]" />
